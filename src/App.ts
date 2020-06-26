@@ -4,9 +4,9 @@ import logo from './logo.svg';
 import './App.css';
 
 export default class App extends Component {
-  logo = logo;
+  private logo = logo;
 
-  static template = hbs`
+  public static template = hbs`
     <div id="intro">
       <img src={{this.logo}}/>
 

@@ -1,0 +1,1 @@
+import '@glint/template/glimmerx';

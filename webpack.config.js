@@ -8,7 +8,7 @@ module.exports = () => {
   const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
   const entry = {
-    app: './src/index.js',
+    app: './src/index.ts',
   };
 
   const plugins = [
@@ -22,7 +22,7 @@ module.exports = () => {
 
   // Include tests in development builds
   if (!IS_PRODUCTION) {
-    entry.tests = glob.sync('./tests/**/*.test.js');
+    entry.tests = glob.sync('./tests/**/*.test.{ts,js}');
 
     plugins.push(
       new HtmlWebpackPlugin({

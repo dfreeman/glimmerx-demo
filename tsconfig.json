@@ -6,13 +6,8 @@
     "inlineSources": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "types": [
-      "qunit"
-    ]
+    "types": ["qunit"],
+    "plugins": [{ "name": "@glint/tsserver-plugin" }]
   },
-  "exclude": [
-    "node_modules",
-    "tmp",
-    "dist"
-  ]
+  "exclude": ["node_modules", "tmp", "dist"]
 }
